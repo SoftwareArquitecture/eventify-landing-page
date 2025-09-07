@@ -1,0 +1,915 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styles for Navbar Section*/
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3A506B;
+    color: white;
+    height: 10vh;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav .hamburguer-icon {
+    display: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .language-switcher{
+    display: flex;
+}
+
+nav .language-switcher .btn-lang{
+    background-color: #1C2541;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input.btn-lang.active{
+    background-color: #6FFFE9;
+    color: #000;
+}
+
+.hamburguer-icon img {
+    height: 70%;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 24px;
+}
+
+.logo a {
+    height: 50%;
+}
+
+.logo a img {
+    height: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 24px;
+}
+
+nav ul a:hover {
+    color: #6FFFE9;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-recurrent{
+    background-color: #6FFFE9;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: #000;
+}
+
+.btn-recurrent:hover{
+    color: #000;
+}
+
+/* Styles for Hero Section*/
+.hero {
+    min-height: 90vh;
+    display: flex;
+    background-color: #1C2541;
+    color: white;
+    justify-content: center;
+    padding: 20px;
+    scroll-margin-top: 10vh;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 100%;
+}
+
+.hero-info .title {
+    font-size: 4rem;
+    color: #6FFFE9;
+    font-weight: 600;
+    margin: 40px 0 16px 0;
+}
+
+.hero-info .slogan {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.hero-info .description {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 48px 24px;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-action {
+    background-color: #3A506B;
+    padding: 16px 40px;
+    margin: 16px 0;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.btn-action:hover {
+    background-color: #5BC0BE;
+    transition: all 0.3s ease;
+}
+
+/* Styles for Benefits Section*/
+
+/* Estilos Benefits and Functionalities Section */
+
+.benefits{
+    display: flex;
+    padding: 40px 20px;
+    min-height: 600px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    scroll-margin-top: 10vh;
+    background-color: #fff;
+}
+
+.benefits img{
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.benefits-content{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.benefits-content h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 40px 0;
+    color: #5BC0BE;
+}
+
+.benefits-content .benefits-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.benefits-card{
+    border-radius: 15px;
+    width: 340px;
+    height: auto;
+    min-height: 350px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #1C2541;
+}
+
+.benefits-card h3 {
+    font-size: 1.5em;
+    color: #6FFFE9;
+    text-align: center;
+    margin: 32px 0;
+}
+
+.benefits-card ul li {
+    margin: 0 32px 24px 48px;
+    text-align: justify;
+    font-size: 1.25em;
+    color: #fff;
+}
+
+/* Styles for Functionalities Section*/
+.functionalities {
+    display: flex;
+    padding: 40px 20px;
+    min-height: 600px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    scroll-margin-top: 10vh;
+    background-color: #1C2541;
+}
+
+.functionalities img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.function-content {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.function-content li {
+    color: #000;
+}
+
+
+.function-content h2 {
+    color: #6FFFE9;
+    margin: 40px 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.function-content .function-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.function-card {
+    border-radius: 15px;
+    width: 340px;
+    height: auto;
+    min-height: 350px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.function-card ul li {
+    margin: 0 32px 24px 48px;
+    text-align: justify;
+    font-size: 1.25em;
+}
+
+.function-info .function-card h3 {
+    font-size: 1.5em;
+    color: #5BC0BE;
+    text-align: center;
+    margin: 32px 0;
+}
+
+
+/* Styles for Plans Section*/
+
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 800px;
+    padding: 40px 20px;
+    background-color: #1C2541;
+    scroll-margin-top: 10vh;
+}
+
+.plans h2{
+    color: #5BC0BE;
+    font-size: 2em;
+    text-align: center;
+    margin: 40px 0 8px 0;
+}
+
+.plans h4, .about-us h4, .about-product h4 {
+    margin: 0 0 32px 0;
+    font-size: 1.25em;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.plan-card h3 {
+    margin: 48px 0 24px 0;
+    font-size: 1.5em;
+    color: #5BC0BE;
+    text-align: center;
+}
+
+.plan-card .plan-desc {
+    margin: 32px 0 24px;
+    font-size: 1.25em;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+
+.plans .plan-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    max-width: 380px;
+    padding: 20px;
+    min-height: 550px;
+    border-radius: 15px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.plans h4{
+    color: #fff;
+}
+
+.plan-price {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.plan-time {
+    font-size: 1.25em;
+    text-align: center;
+    color: #5BC0BE;
+}
+
+.plan-detail {
+    color: #5BC0BE;
+    padding-left: 1.5rem;
+}
+
+.plan-card-btn {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 16px 48px;
+    background-color: #3A506B;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.plan-card-btn:hover {
+    background-color: #5BC0BE;
+    transition: all 0.3s ease;
+}
+
+
+/* Styles for About us Section*/
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #000;
+    scroll-margin-top: 10vh;
+}
+
+.about-us h2{
+    color: #5BC0BE;
+    font-size: 2em;
+    text-align: center;
+    margin: 40px 0 8px 0;
+}
+
+.about-us h4 {
+    color: #000;
+    font-size: 1.25em;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 0 32px 0;
+}
+
+.about-us .startup-profile {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 48px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us .startup-info {
+    font-size: 1em;
+    color: #000;
+    margin: 20px 0;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+.about-us .startup-img {
+    width: 150px;
+    height: 150px;
+}
+
+.about-us .profile-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+.profile-list .profile-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    text-align: center;
+    margin: 10px;
+}
+
+.profile-item .profile-name {
+    color: #000;
+    font-weight: 500;
+    margin: 16px 0 0 0;
+}
+
+.profile-item .profile-role {
+    color: #5BC0BE;
+    font-weight: 500;
+}
+
+.about-us img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Styles for About the product Section*/
+
+.about-product {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 400px;
+    padding: 40px 20px;
+    background-color: #fff;
+    scroll-margin-top: 10vh;
+}
+
+.about-product .content{
+    flex: 1 1 400px;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.content .btn-action {
+    font-size: 1em;
+}
+
+.about-product h2 {
+    color: #5BC0BE;
+    font-size: 2em;
+    text-align: center;
+    margin: 40px 0 8px 0;
+}
+
+
+.about-product h4 {
+    margin: 0 0 32px 0;
+    font-size: 1.25em;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.video-about-product {
+
+    position: relative;
+    width: 60%;
+    max-width: 800px;
+    padding-bottom: 30%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-about-product iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styles for About the product Section*/
+
+.about-the-team {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 400px;
+    padding: 40px 20px;
+    background-color: #1C2541;
+    scroll-margin-top: 10vh;
+}
+
+.about-the-team .content{
+    flex: 1 1 400px;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.content .btn-action {
+    font-size: 1em;
+}
+
+.about-the-team h2 {
+    color: #5BC0BE;
+    font-size: 2em;
+    text-align: center;
+    margin: 40px 0 8px 0;
+}
+
+
+.about-the-team h4 {
+    margin: 0 0 32px 0;
+    font-size: 1.25em;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.video-about-the-team {
+
+    position: relative;
+    width: 60%;
+    max-width: 800px;
+    padding-bottom: 30%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-about-the-team iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Styles for footer section*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #3A506B;
+    padding: 24px 20px 8px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    font-size: 1em;
+    margin-bottom: 24px;
+}
+
+.footer-content .logo {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content .footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.footer-contact span {
+    font-size: 1.25em;
+    color: #6FFFE9;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.footer-contact p {
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-content .footer-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.footer-navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-navbar ul li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer-navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-navbar ul li a:hover {
+    color: #6FFFE9;
+    font-weight: 500;
+}
+
+.footer-social-networks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.footer-social-networks p {
+    font-size: 1.25em;
+    color: #6FFFE9;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.network-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-social-networks i {
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer-social-networks i:hover {
+    color: #6FFFE9;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+footer .copyright {
+    text-align: center;
+    color: #6FFFE9;
+    margin-top: 20px;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: #3A506B;
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu .btn-lang {
+    background-color: #1C2541;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu li {
+    list-style: none;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.mobile-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu li a:hover {
+    color: #6FFFE9;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+    .hero-info .title {
+        font-size: 3.5rem;
+    }
+
+    .hero-info .slogan,
+    .hero-info .description {
+        font-size: 1.75rem;
+    }
+
+    .video-about-product {
+        width: 100%;
+        max-width: 500px;
+        padding-bottom: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image, .hero-info {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hero-info .title {
+        font-size: 3rem;
+        margin: 20px 0 10px 0;
+    }
+
+    .hero-info .slogan {
+        font-size: 1.5rem;
+    }
+
+    .hero-info .description {
+        font-size: 1.5rem;
+        margin: 0 20px 20px;
+    }
+
+    .benefits, .functionalities {
+        flex-direction: column;
+    }
+
+    .benefits img, .functionalities img {
+        order: 2;
+    }
+
+    .startup-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-about-product {
+        width: 70%;
+        max-width: 800px;
+        padding-bottom: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .hamburguer-icon {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hero-info .title {
+        font-size: 2.5rem;
+    }
+
+    .hero-info .slogan,
+    .hero-info .description {
+        font-size: 1.25rem;
+    }
+
+    .btn-action {
+        width: 90%;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .benefits-card, .function-card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .video-about-product {
+        width: 80%;
+        max-width: 800px;
+        padding-bottom: 56.25%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-info .title {
+        font-size: 2rem;
+    }
+
+    .hero-info .slogan {
+        font-size: 1rem;
+    }
+
+    .hero-info .description {
+        font-size: 1rem;
+        margin: 0 10px 20px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    .benefits-card ul li,
+    .function-card ul li {
+        font-size: 1em;
+        margin: 0 20px 16px 30px;
+    }
+
+    .plan-card .plan-desc {
+        font-size: 1em;
+    }
+
+    .plan-card-btn {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+}

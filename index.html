@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Eventify es la plataforma donde anfitriones encuentran al organizador ideal y organizadores hacen crecer su negocio. Conecta, organiza y celebra con confianza."
+    />
+    <meta
+      name="keywords"
+      content="eventos, organización, anfitriones, organizadores, bodas, celebraciones, gestión de eventos, planificación de eventos"
+    />
+    <meta name="author" content="AngelDevs" />
+    <link
+      rel="icon"
+      href="./assets/images/eventify-icon.png"
+      type="image/png"
+    />
+    <title>Eventify - Landing page</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <script defer src="./assets/scripts/script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#hero"
+            ><img src="./assets/images/eventify-logo.png" alt="eventify-logo"
+          /></a>
+        </div>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about-product">About the Product</a></li>
+          <li><a href="#functionalities">Functionalities</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#about-us">About us</a></li>
+          <li><a href="#about-the-team">About the team</a></li>
+          <li>
+            <a
+              class="btn-recurrent"
+              href="https://eventify-webapp-frontend.web.app"
+              target="_blank"
+              >Get Started</a
+            >
+          </li>
+        </ul>
+        <div class="language-switcher">
+          <input type="button" value="EN" class="btn-lang active" id="btn-en" />
+          <input type="button" value="ES" class="btn-lang" id="btn-es" />
+        </div>
+        <div class="hamburguer-icon">
+          <a href="#"
+            ><img
+              src="./assets/images/hamburguer-icon.png"
+              alt="hamburguer-icon"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="hero">
+      <div class="hero-image">
+        <img
+          src="./assets/images/hero-section-image.png"
+          alt="hero-image"
+          loading="lazy"
+        />
+      </div>
+      <div class="hero-info">
+        <p class="title">Eventify</p>
+
+        <span class="slogan">Connect - Organize - Celebrate</span>
+        <p class="description">
+          A platform for hosts to find the ideal organizer, and organizers to
+          grow their business
+        </p>
+        <div class="call-to-action">
+          <a
+            class="btn-action"
+            href="https://eventify-webapp-frontend.web.app"
+            target="_blank"
+            >Find your organizer</a
+          >
+          <a
+            class="btn-action"
+            href="https://eventify-webapp-frontend.web.app"
+            target="_blank"
+            >Join as an organizer</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About the product Section -->
+
+    <section class="about-product" id="about-product">
+      <div class="content">
+        <h2>Learn how eventify works</h2>
+        <h4>
+          Watch our video tutorial and learn how to get the most out of it from
+          the first event
+        </h4>
+        <div class="call-to-action">
+          <a
+            class="btn-action"
+            href="https://eventify-webapp-frontend.web.app"
+            target="_blank"
+            >Manage events with ease</a
+          >
+          <a
+            class="btn-action"
+            href="https://eventify-webapp-frontend.web.app"
+            target="_blank"
+            >Organize your events without stress</a
+          >
+        </div>
+      </div>
+      <div class="video-about-product">
+        <iframe
+          src="https://www.youtube.com/embed/RmXh-lrJ9Nw?si=PjaC8JQPlI8Y3j-L"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Functionalities Section -->
+    <section class="functionalities" id="functionalities">
+      <img
+        src="./assets/images/functionalities-section-image.png"
+        alt="functionalities-img"
+        loading="lazy"
+      />
+      <div class="function-content">
+        <h2>What does Eventify offer you?</h2>
+        <div class="function-info">
+          <div class="function-card">
+            <h3>Organizers</h3>
+            <ul>
+              <li>Create events and quotes</li>
+              <li>Task planning by event</li>
+              <li>Interactive calendar to organize events</li>
+            </ul>
+          </div>
+          <div class="function-card">
+            <h3>Hosts</h3>
+            <ul>
+              <li>Search and filter organizers</li>
+              <li>Direct communication with the organizer</li>
+              <li>Monitoring the organizer's planning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Benefits Section -->
+
+    <section class="benefits" id="benefits">
+      <div class="benefits-content">
+        <h2>Why use Eventify?</h2>
+
+        <div class="benefits-info">
+          <div class="benefits-card">
+            <h3>Organizers</h3>
+            <ul>
+              <li>Connect with more clients every week</li>
+              <li>Manage your events in one place</li>
+              <li>Show your experience and build trust</li>
+            </ul>
+          </div>
+          <div class="benefits-card">
+            <h3>Hosts</h3>
+            <ul>
+              <li>Find professional organizers</li>
+              <li>Save time and effort</li>
+              <li>Coordinate everything from one place</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/images/benefits-section-image.png"
+        alt="benefits-img"
+        loading="lazy"
+      />
+    </section>
+
+    <!-- Plans Section -->
+
+    <section class="plans" id="plans">
+      <h2>Are you an event organizer?</h2>
+      <h4>
+        Learn about our plans that will enhance your work as an event organizer
+      </h4>
+      <div class="plan-content">
+        <div class="plan-card">
+          <h3>Basic Plan</h3>
+          <span class="plan-price">S/. 300.00</span>
+          <p class="plan-time">(monthly)</p>
+          <p class="plan-desc">
+            Ideal for those starting out. Manage your first events and explore
+            all the tools
+          </p>
+          <ul class="plan-detail">
+            <li>Allows you to work with up to 2 hosts at the same time</li>
+          </ul>
+          <a
+            class="plan-card-btn"
+            href="https://eventify-webapp-frontend.web.app"
+            target="_blank"
+            >Start now</a
+          >
+        </div>
+        <div class="plan-card">
+          <h3>Standard Plan</h3>
+          <span class="plan-price">S/. 400.00</span>
+          <p class="plan-time">(monthly)</p>
+          <p class="plan-desc">
+            Perfect for growing organizers. Keep your workflow efficient with
+            more attention and organization
+          </p>
+          <ul class="plan-detail">
+            <li>Allows you to work with up to 5 hosts at the same time</li>
+          </ul>
+          <a
+            class="plan-card-btn"
+            href="https://eventify-webapp-frontend.web.app"
+            target="_blank"
+            >Start now</a
+          >
+        </div>
+        <div class="plan-card">
+          <h3>Premium Plan</h3>
+          <span class="plan-price">S/. 500.00</span>
+          <p class="plan-time">(monthly)</p>
+          <p class="plan-desc">
+            Designed for established professionals. Coordinate several events at
+            the same time and maximize your operational capacity without limits
+          </p>
+          <ul class="plan-detail">
+            <li>Allows you to work with up to 10 hosts at the same time</li>
+          </ul>
+          <a
+            class="plan-card-btn"
+            href="https://eventify-webapp-frontend.web.app"
+            target="_blank"
+            >Start now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About us Section -->
+    <section class="about-us" id="about-us">
+      <h2>About us</h2>
+      <h4>Meet the team in charge of designing and developing Eventify</h4>
+      <div class="startup-profile">
+        <img
+          class="startup-img"
+          src="./assets/images/angeldevs-logo.jpg"
+          alt="angeldevs-logo"
+          loading="lazy"
+        />
+        <p class="startup-info">
+          AngelDevs is a startup that specializes in developing digital and
+          innovative solutions that transform traditional industries through
+          accessible, scalable technology ready to evolve with the demands of
+          the future.
+        </p>
+      </div>
+      <div class="profile-list">
+        <div class="profile-item">
+          <img
+            src="./assets/images/team/omar.jpg"
+            alt="profile2"
+            loading="lazy"
+          />
+          <p class="profile-name">Omar Christian Berrocal Ramirez</p>
+          <p class="profile-role">Developer</p>
+        </div>
+        <div class="profile-item">
+          <img
+            src="./assets/images/team/andres.jpeg"
+            alt="profile3"
+            loading="lazy"
+          />
+          <p class="profile-name">Andres Alberto Torres Garcia</p>
+          <p class="profile-role">Developer</p>
+        </div>
+        <div class="profile-item">
+          <img src="./assets/images/" alt="profile4" loading="lazy" />
+          <p class="profile-name"></p>
+          <p class="profile-role">Developer</p>
+        </div>
+        <div class="profile-item">
+          <img src="./assets/images/" alt="profile5" loading="lazy" />
+          <p class="profile-name"></p>
+          <p class="profile-role">Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About the Team Section -->
+
+    <section class="about-the-team" id="about-the-team">
+      <div class="content">
+        <h2>About the Team</h2>
+        <h4>
+          See how the idea was born, how we work and why we believe planning
+          your event should be simple and exciting.
+        </h4>
+        <div class="call-to-action">
+          <a
+            class="btn-action"
+            href="https://eventify-webapp-frontend.web.app"
+            target="_blank"
+            >Start managing your events today</a
+          >
+          <a
+            class="btn-action"
+            href="https://eventify-webapp-frontend.web.app"
+            target="_blank"
+            >Find your ideal organizer</a
+          >
+        </div>
+      </div>
+      <div class="video-about-the-team">
+        <iframe
+          src="https://www.youtube.com/embed/RZ0y_Dtabk4?si=Fs5-3TDC2cQQGl8v"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-content">
+        <img
+          class="logo"
+          src="./assets/images/eventify-logo.png"
+          alt="eventify-logo"
+        />
+        <div class="footer-contact">
+          <span>Contacts</span>
+          <p><i class="fa-solid fa-envelope"></i> eventify@angeldevs.com</p>
+          <p><i class="fa-solid fa-phone"></i> +51 983290166</p>
+        </div>
+        <div class="footer-navbar">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#functionalities">Functionalities</a></li>
+            <li><a href="#plans">Plans</a></li>
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="#about-product">About the product</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-networks">
+          <p>Social Networks</p>
+          <div class="network-icons">
+            <i class="fa-brands fa-x-twitter fa-2x"></i>
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-brands fa-youtube fa-2x"></i>
+            <i class="fa-brands fa-github fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">Copyright © 2025 Eventify. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
